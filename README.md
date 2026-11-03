@@ -1,36 +1,102 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Wubble Frontend
 
-## Getting Started
+Frontend веб-приложения **Wubble** — системы мониторинга веб-сервисов.
 
-First, run the development server:
+## О проекте
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Wubble — система синтетического мониторинга, предназначенная для автоматической проверки доступности и работоспособности веб-сервисов.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Приложение позволяет пользователям управлять отслеживаемыми ресурсами, настраивать проверки и анализировать их результаты. Основная задача системы — помочь своевременно обнаруживать сбои и отслеживать восстановление сервисов.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Данный репозиторий содержит клиентскую часть приложения.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Основные возможности
 
-## Learn More
+В рамках разработки MVP планируется реализовать:
 
-To learn more about Next.js, take a look at the following resources:
+- **Аутентификацию** — регистрацию и вход пользователей.
+- **Рабочие пространства** — объединение ресурсов и проверок в рамках одного проекта.
+- **Управление ресурсами** — добавление, редактирование и удаление отслеживаемых веб-сервисов.
+- **Настройку проверок** — конфигурацию HTTP-проверок и параметров их выполнения.
+- **Мониторинг состояния** — отображение текущего состояния веб-сервисов.
+- **Историю проверок** — просмотр результатов предыдущих запусков и времени ответа.
+- **Инциденты** — отслеживание сбоев и восстановления работоспособности.
+- **Уведомления** — информирование пользователей о возникновении проблем и восстановлении сервисов.
+- **Отчёты** — представление статистики доступности и результатов мониторинга.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Технологический стек
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- [Next.js](https://nextjs.org/) — React-фреймворк для разработки веб-приложения.
+- [React](https://react.dev/) — библиотека пользовательских интерфейсов.
+- [TypeScript](https://www.typescriptlang.org/) — типизированный JavaScript.
+- [Tailwind CSS](https://tailwindcss.com/) — стилизация интерфейса.
+- [React Compiler](https://react.dev/learn/react-compiler) — автоматическая оптимизация React-компонентов.
+- [ESLint](https://eslint.org/) — статический анализ кода.
 
-## Deploy on Vercel
+## Требования
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Для локального запуска необходимы:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Node.js (совместимая с используемой версией Next.js версия).
+- [Bun](https://bun.sh/) версии 1.3.14 или выше.
+
+## Установка и запуск
+
+1. Клонировать репозиторий:
+
+   ```bash
+   git clone <repository-url>
+   ```
+
+2. Перейти в директорию проекта:
+
+   ```bash
+   cd wubble-frontend
+   ```
+
+3. Установить зависимости:
+
+   ```bash
+   bun install
+   ```
+
+4. Запустить сервер разработки:
+
+   ```bash
+   bun run dev
+   ```
+
+5. Открыть приложение в браузере:
+
+   ```text
+   http://localhost:3000
+   ```
+
+## Доступные команды
+
+| Команда | Описание |
+|---|---|
+| `bun run dev` | Запуск сервера разработки |
+| `bun run build` | Сборка production-версии |
+| `bun run start` | Запуск production-сборки |
+| `bun run lint` | Проверка кода с помощью ESLint |
+
+## Структура проекта
+
+Структура директорий будет дополняться по мере разработки приложения.
+
+## Статус проекта
+
+<sub>В разработке — MVP.</sub>
+
+Проект находится на стадии разработки. Функциональность и архитектура могут изменяться по мере уточнения требований.
+
+## Команда
+
+Проект разрабатывается в рамках учебного проекта.
+Состав из 5 человек:
+-- Бузмаков Даниил Александрович - Системный-аналитик/DevOps/Backend-разработчик
+-- Кокорева Анастасия Андреевна - Бизнес-аналитик
+-- Чурсина Елизавета Анатольевна - Дизайнер (UI/UX)
+-- Бажеева Алисия Владимировна - Frontend-разработчик
+-- Тимофеев Егор Романович - Team Lead
